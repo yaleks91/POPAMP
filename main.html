@@ -37,6 +37,8 @@
     const url = 'hello-world.html';
 
     history.pushState(state, "", url);
+
+    window.sessionStorage.removeItem('mb-pop-showed');
   </script>
 
   <script async src="https://js.mediabrama.com/mediabrama.js?client=100014"></script>
