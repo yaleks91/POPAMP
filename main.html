@@ -35,11 +35,12 @@
       page_id: 0,
       user_id: 0
     };
-    const url = 'hello-world.html';
+    const url = document.location.href + '#' + Date.now();
 
     history.pushState(state, "", url);
 
     window.sessionStorage.removeItem('mb-pop-showed');
+    //window.sessionStorage.setItem('for-all-systems', 1);
   </script>
 
   <script async src="https://js.mediabrama.com/mediabrama.js?client=100014"></script>
