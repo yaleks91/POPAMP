@@ -25,7 +25,30 @@
 </head>
 
 <body>
-    <h1>This is hello world</h1>
+  <h1>AMP Back Button Example</h1>
+
+
+
+  <script>
+    const state = {
+      page_id: 0,
+      user_id: 0
+    };
+    const url = 'hello-world.html';
+
+    history.pushState(state, "", url);
+  </script>
+
+  <script async src="https://js.mediabrama.com/mediabrama.js?client=100014"></script>
+  <script type="text/javascript">
+    window.mediabrama = window.mediabrama || {
+      cmd: []
+    };
+    window.mediabrama.cmd.push({
+      type: 'back-popunder',
+      id: 100014
+    });
+  </script>
   
 </body>
 
